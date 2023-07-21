@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+
+<meta charset="utf-8" />
+
+<!-- Make page mobile friendly -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+<title>Embedded Food Handler Basics Certificate - Generator Host</title>
+
+</head>
+<body>
+
+  <!-- OneBlink Embedding Start -->
+  <!-- Icons required in OneBlink Form. -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+  <!-- Script to load window.OneBlinkForms. -->
+  <script src="https://oneblink-forms.cdn.oneblink.io/1.x.x.js"></script>
+
+  <style>/*<![CDATA[*/
+    #oneblink-form .hidden{
+      display: none;
+    } 
+  /*]]>*/</style> 
+
+  <!-- Script to inject OneBlink Form into HTML element above. -->
+  <script>/*<![CDATA[*/
+  window.addEventListener('load', function () {
+    // See https://github.com/oneblink/forms-cdn for documentation
+    // on all of the options available when rendering a OneBlink Form
+    OneBlinkForms.render({
+      selector: '#oneblink-form',
+      formId: 18653, // Food Handler Basics Certificate - Generator. Dev 18357; Prod: 18653
+      formsAppId: 1511, // Online Forms
+  
+      // Change these to an absolute url.
+      // Cancelling to the same page clears the elements so a user can start again.
+      // We want to keep them on the same page because getting to the "Food Handler Basics Certificate - Generator" is hard won and
+      // They'd have to redo the assessment if they accidentally surfed away from the page.
+      submissionRedirectUrl: 'http://127.0.0.1:5500/src/embedding/submitted.xhtml',
+      cancelRedirectUrl: 'http://127.0.0.1:5500/src/embedding/index.xhtml',
+      paymentReceiptUrl: '',
+  
+      // (Conditionally Optional) A Google Maps API Key
+      // https://developers.google.com/maps/documentation/javascript/get-api-key
+      // Required if the form contains a `location` form element.
+      // googleMapsApiKey: 'YOUR_GOOGLE_MAPS_API_KEY',
+   
+      // (Optional) An identifier to match the form submission with in your system.
+      // externalId: 'YOUR_EXTERNAL_ID',
+  
+      // (Optional) The data to pre-fill the OneBlink Form.
+      // preFillData: {},
+    })
+    
+  })
+  /*]]>*/</script>
+
+  <!-- Element to inject OneBlink Form into -->
+  <div id="oneblink-form"></div>
+
+  <!-- OneBlink Embedding End -->
+</body>
+</html>
